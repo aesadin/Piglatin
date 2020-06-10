@@ -20,19 +20,32 @@ function plusAy(consonantWord) {
 }
 
 
-function moveConsonants(word) {
+function moveConsonants(splitString) {
     const vowels = ["a", "e", "i", "o", "u"];
-    let wordArray = word.split("");
-    for(i=0; i <wordArray.length; i++) {
-        let vowelMatch = false
+    //let wordArray = word.split("");
+    for(i=0; i < splitString.length; i++) {
+        let vowelMatch = false;
+            let value;
         for(v=0; v <vowels.length; v++) {
-            if (vowels[v] === wordArray[i]) {
-                return true
-                //vowelMatch = true;
-                //break;
-                //console.log(wordArray)
+            if (vowels[v] === splitString[i]) {
+                let value = i
+                console.log(value)
+                break;
+               
             };
-        };
+        }; 
+        
+        let newSplit = (splitString.slice(value) + splitString.slice(0, value) + "ay")
+            return newSplit;
+};
+};        
+
+        //character 
+
+        //aracter + ch + ay 
+ 
+
+
 
         //christening
         //const 1 =chr
@@ -40,8 +53,7 @@ function moveConsonants(word) {
       //const 3 =  const 2 (concat)const 1 "ay"
       //isteningchray
     
-};
-};
+
 //vowel = ["a", "e", "i", "o", "u"]
 //user inputs "fart" 
 // let inputWord = inputWord.split("") <-- ["f", "a", "r", "t"]
