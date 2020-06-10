@@ -28,7 +28,11 @@ Example Output: iway
 Example Input: apple
 Example Output: appleway
 
-* The program moves all of the first consecutive consonants of a word to the end, and add "ay"
+* The program moves the beginning letter of a word beginning with a consonant, and adds "ay"
+Example Input: mouse   
+Example Exput: ousemay 
+
+* The program moves all of the first consecutive consonants of a word to the end, and adds "ay"
 Example Input: character
 Example Output: aracterchay
 
